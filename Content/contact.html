@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact Us</title
+        <link rel="stylesheet" href="Content/main.css">
+        <style>
+		</style>
+	</head>
+	<body>
+		
+        <div class="container">
+        <!-- Header Section -->
+       <header> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
+           <nav role="navigation">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="services.html">Order Now</a></li> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
+                   <li><a href="about.html">About Us</a></li>
+                   <li class="active"><a href="contact.html">Contact Us</a></li>
+                   
+               </ul>
+           </nav>
+       </header>
+       <!-- Main Section -->
+       <main role="main">
+          <article class="article">
+           <h1>Contact Us</h1>
+               <address>
+                   <strong>Virtual Reality Suppliers</strong><br>
+                   123 VR Road <br>
+                   Virtual, Reality <br>
+                   TEL: 905-555-5555 <br>
+                   FAX: 555-5556 <br>
+                   Email:<a href="mailto:info@VRsuppliers.com ">info@VRsuppliers.com</a> <br> <!-- a[href="mailto:info@companyname.com "]{} -->
+                   <!-- you probably don't want to put your email if you don't wanna be bombed by spam bots -->
+                   WWW: <a href="http://www.VRsuppliers.com" target="_blank">www.VRsuppliers.com</a><br>
+               </address>
+            </article>
+            
+            <hr>
+            
+            <!-- Form Section -->
+            <section class="formSection">
+                
+                <form action="processform.php" method="post" id="contactForm" class="forms"> <!-- action is the link to where it goes, method says whether to "get" or "post", id is to target it later, class is to style it -->
+                
+                <fieldset class="contact">
+                 <legend>VR Suppliers Contact Form</legend>
+                 
+                  
+                  <div class="row formGroup"><!-- div.r -->
+                   <label for="firstName">First Name:</label> <!-- this label is FOR this placeholder -->
+                   <input type="text" id="firstName" name="firstName" class="formControl"placeholder="Enter Your First Name" required autofocus><br> <!-- autofocus is an event that gives focus to an element, it makes the name box start as the area where you are ready to type, and for some reason it makes the browser color the box blue after restyling the page -->
+                    </div>
+                    
+                    <div class="row formGroup"> <!-- this div class is just a generic class -->
+                   <label for="lastName">Last Name:</label> 
+                   <input type="text" id="lastName" name="lastName" class="formControl"placeholder="Enter Your Last Name" required><br>
+                   </div>
+                   
+                   <div class="row formGroup">
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" class="formControl"placeholder="Enter Your email@company name" required><br>
+                   </div>
+                   
+                    <div class="row formGroup">
+                    <label for="phone">Phone:</label>
+                   <input type="tel" id="phone" name="phone" class="formControl"placeholder="Phone (XXX) XXX-XXXX" <required>                    </required><br>
+                   </div>
+                   
+                   <div class="row formGroup">
+                    <label for="message">Message:</label>
+                   <input type="textarea" id="message" name="message" class="formControl"placeholder="Enter Your Message" >
+                    </div>
+                 
+                   <label for="submit"></label> <!-- this label is FOR this placeholder -->
+                   <input type="submit" id="submitButton" name="submitButton" value="Send" class="button"<br>
+                  
+                </form>
+                </fieldset>
+                
+            </section>
+             
+       </main>
+       <footer>
+          <hr>
+           &copy; Copyrigth 2015. All rights reserved.
+       </footer>
+    </body>
+</html>

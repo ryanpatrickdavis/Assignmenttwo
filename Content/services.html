@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Order VR</title
+        <link rel="stylesheet" href="Content/main.css">
+        <style>
+		</style>
+	</head>
+	<body>
+		
+        <div class="container">
+        <!-- Header Section -->
+       <header> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
+           <nav role="navigation">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="services.html">Order Now</a></li> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+                   
+               </ul>
+           </nav>
+       </header>
+       <!-- Main Section -->
+       <main role="main">
+           <section class="formSection">
+                
+                <form action="processform.php" method="post" id="contactForm" class="forms"> <!-- action is the link to where it goes, method says whether to "get" or "post", id is to target it later, class is to style it -->
+                
+                <fieldset class="buy">
+                 <legend>Buy a Playstation VR</legend>
+                 
+                    <h2>First, tell us a little bit about yourself:</h2>
+                    <div class="row">
+                    <legend>Gender:</legend>
+                    
+                    <label for="genderMale">Male</label> <!-- selects male option -->
+                   <input type="radio" id="male" name="male" class="formControl" value="male">
+                   
+                   <label for="genderFemale">Female</label>
+                   <input type="radio" id="female" name="female" class="formControl" value="female" >
+                    </div>
+                 <div class="row formGroup"> <!-- selects female option -->
+                    <label for="checkbox">I am more interested in the Playstation VR</label>
+                   <input type="checkbox" id="playstation" name="playstationVR" class="formControl" value="playstationVR" >
+                    </div>
+                    
+                    <div class="row formGroup"> <!-- selects occulus rift option -->
+                    <label for="checkbox">I am more interested in the Occulus Rift</label>
+                   <input type="checkbox" id="occulus" name="occulusRift" class="formControl" value="occulusRift" >
+                    </div>
+                    
+                    <div class="row formGroup"> <!-- leaves a message -->
+                    <label for="message">Why are you more interested in that VR?</label>
+                   <input type="textarea" id="message" name="message" class="formControl" placeholder="Enter Your Message" >
+                    </div>
+                    
+                    <br><br>
+                    <img src="../Assets/images/vrHeadset.png" align="right" alt="Playstation VR Headset" cite="http://images.pushsquare.com/news/2015/09/tgs_2015_sony_suggests_playstation_vr_wont_be_cheap/attachment/0/630x">
+                    <h3>Next, Please Submit your billing information:</h3>
+                  
+                  <div class="row formGroup"><!-- div.r -->
+                  
+                   <label for="fullName">Enter Your Full name as it appears on your card:</label> <!-- asks for first name -->
+                   <input type="text" id="fullName" name="fullName" class="formControl" placeholder="Enter Your Full Name" required autofocus><br> <!-- autofocus is an event that gives focus to an element, it makes the name box start as the area where you are ready to type, and for some reason it makes the browser color the box blue after restyling the page -->
+                    </div>
+                    
+                    <div class="row formGroup"> <!-- selects Visa option -->
+                    <label for="checkbox">VISA</label>
+                   <input type="checkbox" id="VISA" name="VISA" class="formControl" value="VISA" >
+                    </div>
+                    
+                    <div class="row formGroup"> <!-- selects mastercard option -->
+                    <label for="checkbox">Mastercard</label>
+                   <input type="checkbox" id="Mastercard" name="Mastercardt" class="formControl" value="Mastercard" >
+                    </div>
+                    
+                     <div class="row formGroup"> <!-- asks for credit card number -->
+                    <label for="phone">Credit Card Number:</label>
+                   <input type="cred" id="credit" name="credit" class="formControl" placeholder="Enter Your 16-digit number" required>           
+                   </div>
+                   
+                   <div class="row formGroup"> <!-- asks for email -->
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" class="formControl" placeholder="Enter Your email@company name" required><br>
+                   </div>
+                   
+                    <div class="row formGroup"> <!-- asks for phone -->
+                    <label for="phone">Phone:</label>
+                   <input type="tel" id="phone" name="phone" class="formControl" placeholder="Phone (XXX) XXX-XXXX" required>                  
+                   </div>
+                   
+                  
+                   
+                   
+                    
+                    <div class="row formGroup">  <!-- selects your country -->
+                   <label for="selectBoxes">Country:</label> <!-- this label is for THISplaceholder -->
+                   <select id="selectBoxes" name="selectBoxes" value="optiondata">
+                   <br>
+                   <option>Canada</option> 
+                   <option>United States</option>
+                   
+                   </select>
+                   </div>
+                   <br><br>
+                    
+                    <div class="row formGroup"> <!-- submits the form -->
+                   <input type="submit" id="submitButton" name="submitButton"  value="Send" class="button">
+                   </div>
+                  
+                </form>
+                </fieldset>
+                
+            </section>
+       </main>
+       <footer>
+           <h4>References:</h4>
+        
+       <small> Image: Barker, S. (2015). <em>TGS 2015: Sony suggests playstation vr won't be cheap.</em> Retrieved from: http://www.pushsquare.com/news/2015/09/tgs_2015_sony_suggests_playstation_vr_wont_be_cheap</small>
+        
+        <br>
+        <br>
+        
+           &copy; Copyrigth 2015. All rights reserved.
+       </footer>
+    </body>
+</html>
