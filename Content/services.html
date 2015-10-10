@@ -8,18 +8,19 @@
         <style>
 		</style>
 	</head>
-	<body>
+	<body bgcolor="#191964">
+		<font color="white">
 		
         <div class="container">
         <!-- Header Section -->
        <header> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
            <nav role="navigation">
                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="products.html">Products</a></li>
-                   <li><a href="services.html">Order Now</a></li> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
-                   <li><a href="about.html">About Us</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
+                   <li><a href="../index.html" style="color: #CC0000">Home</a></li>
+                   <li><a href="products.html" style="color: #CC0000">Products</a></li>
+                   <li class="active" ><a href="services.html" style="color: #330000">Order Now</a></li> <!-- header>nav>ul>li*5>a[href="#"]{Link #$} -->
+                   <li><a href="about.html" style="color: #CC0000">About Us</a></li>
+                   <li><a href="contact.html" style="color: #CC0000">Contact Us</a></li>
                    
                </ul>
            </nav>
@@ -31,18 +32,21 @@
                 <form action="processform.php" method="post" id="contactForm" class="forms"> <!-- action is the link to where it goes, method says whether to "get" or "post", id is to target it later, class is to style it -->
                 
                 <fieldset class="buy">
+                
                  <legend>Buy a Playstation VR</legend>
-                 
-                    <h2>First, tell us a little bit about yourself:</h2>
+                  <font color="orange">
+                    <h1>First, tell us a little bit about yourself:</h1>
+                    </font>
                     <div class="row">
                     <legend>Gender:</legend>
                     
                     <label for="genderMale">Male</label> <!-- selects male option -->
-                   <input type="radio" id="male" name="male" class="formControl" value="male">
+                   <input type="radio" id="male" name="radio" class="formControl" value="male">
                    
                    <label for="genderFemale">Female</label>
-                   <input type="radio" id="female" name="female" class="formControl" value="female" >
+                   <input type="radio" id="female" name="radio" class="formControl" value="female" >
                     </div>
+                    <br>
                  <div class="row formGroup"> <!-- selects female option -->
                     <label for="checkbox">I am more interested in the Playstation VR</label>
                    <input type="checkbox" id="playstation" name="playstationVR" class="formControl" value="playstationVR" >
@@ -54,13 +58,16 @@
                     </div>
                     
                     <div class="row formGroup"> <!-- leaves a message -->
-                    <label for="message">Why are you more interested in that VR?</label>
-                   <input type="textarea" id="message" name="message" class="formControl" placeholder="Enter Your Message" >
+                    <label for="message">Why are you more interested in that VR Product?</label>
+                   <input type="textarea" id="message" name="message" class="formControl" placeholder="Tell Us Why" >
                     </div>
                     
                     <br><br>
                     <img src="../Assets/images/vrHeadset.png" align="right" alt="Playstation VR Headset" cite="http://images.pushsquare.com/news/2015/09/tgs_2015_sony_suggests_playstation_vr_wont_be_cheap/attachment/0/630x">
-                    <h3>Next, Please Submit your billing information:</h3>
+                    
+                     <font color="orange">
+                    <h2>Next, Please Submit your billing information:</h2>
+                     </font>
                   
                   <div class="row formGroup"><!-- div.r -->
                   
@@ -75,7 +82,7 @@
                     
                     <div class="row formGroup"> <!-- selects mastercard option -->
                     <label for="checkbox">Mastercard</label>
-                   <input type="checkbox" id="Mastercard" name="Mastercardt" class="formControl" value="Mastercard" >
+                   <input type="checkbox" id="Mastercard" name="Mastercard" class="formControl" value="Mastercard" >
                     </div>
                     
                      <div class="row formGroup"> <!-- asks for credit card number -->
@@ -118,14 +125,17 @@
             </section>
        </main>
        <footer>
-           <h4>References:</h4>
+           <font color="orange">
+           <h3>References:</h3>
+           </font>
         
        <small> Image: Barker, S. (2015). <em>TGS 2015: Sony suggests playstation vr won't be cheap.</em> Retrieved from: http://www.pushsquare.com/news/2015/09/tgs_2015_sony_suggests_playstation_vr_wont_be_cheap</small>
         
         <br>
         <br>
         
-           &copy; Copyrigth 2015. All rights reserved.
+           &copy; Copyright 2015. All rights reserved.
        </footer>
+            </font>
     </body>
 </html>
